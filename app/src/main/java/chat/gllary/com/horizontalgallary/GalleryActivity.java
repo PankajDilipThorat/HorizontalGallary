@@ -55,7 +55,7 @@ public class GalleryActivity extends AppCompatActivity {
         _closeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "Close clicked");
+                Log.e(TAG, "Close clicked");
                 finish();
             }
         });
@@ -73,6 +73,7 @@ public class GalleryActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
+            Log.e(TAG, "Close clicked"+_images.size());
             return _images.size();
         }
 
